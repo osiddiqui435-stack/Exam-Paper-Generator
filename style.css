@@ -1,0 +1,43 @@
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Paper Styling & Print Settings */
+#paper-preview {
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+/* Custom styles when converting HTML to PDF */
+.pdf-export-mode {
+  padding: 15mm 15mm !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: #ffffff !important;
+  width: 210mm !important;
+}
+
+/* Question Option Styling */
+.mcq-option-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .mcq-option-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
